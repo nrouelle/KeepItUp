@@ -1,10 +1,11 @@
-﻿ /// <reference path="../Scripts/typings/mocha/mocha.d.ts"/>
+﻿/// <reference path="../Scripts/typings/mocha/mocha.d.ts"/>
 var request = require('supertest');
+var should = require('should');
 
 describe("Loading express", () => {
     var server;
 
-    beforeEach(function() {
+    beforeEach(function () {
         server = require('../server');
     });
 
