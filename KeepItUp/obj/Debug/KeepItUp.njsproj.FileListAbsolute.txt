@@ -1,0 +1,2 @@
+D:\Sources\samples\KeepItUp\KeepItUp\obj\Debug\KeepItUp.njsprojResolveAssemblyReference.cache
+D:\Sources\samples\KeepItUp\KeepItUp\bin\Microsoft.NodejsTools.WebRole.dll

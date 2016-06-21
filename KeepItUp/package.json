@@ -1,15 +1,18 @@
 {
   "name": "keep-it-up",
   "version": "0.0.0",
-  "description": "KeepItUp",
+  "description": "A sample application to leanr NodeJS with TDD",
   "main": "app.js",
   "author": {
-    "name": "NR262C8N",
-    "email": ""
+    "name": "Nadège Rouelle",
+    "email": "nadege.rouelle@outlook.fr"
   },
-  "dependencies": {
-    "express": "3.4.4",
-    "jade": "*",
-    "stylus": "*"
-  }
+    "dependencies": {
+        "express": "3.4.4",
+        "jade": "*",
+        "stylus": "*"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    }
 }
