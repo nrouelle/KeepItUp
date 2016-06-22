@@ -1,14 +1,11 @@
-﻿/// <reference path="../Scripts/typings/mocha/mocha.d.ts"/>
+/// <reference path="../Scripts/typings/mocha/mocha.d.ts"/>
 var request = require('supertest');
 var should = require('should');
-
-describe("Loading express", () => {
+describe("Loading express", function () {
     var server;
-
     beforeEach(function () {
         server = require('../server');
     });
-
     afterEach(function () {
         server.close();
     });
@@ -22,4 +19,15 @@ describe("Loading express", () => {
             .get('/foo/bar')
             .expect(404, done);
     });
+    it('responds to About', function testSlash(done) {
+        request(server)
+            .get('/about')
+            .expect(200, done);
+    });
+    it('responds to Contact', function testSlash(done) {
+        request(server)
+            .get('/contact')
+            .expect(200, done);
+    });
 });
+//# sourceMappingURL=expressspecs.js.map
